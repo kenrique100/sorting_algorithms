@@ -1,6 +1,7 @@
 #ifndef SORT_H
 #define SORT_H
 
+#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,4 +21,7 @@ struct listint_s *next;
 
 void print_list(const listint_t *list);
 void print_array(const int *arr, size_t size);
+
+/* Sorting algorithms */
+void bubble_sort(int *arr, size_t size);
 #endif
